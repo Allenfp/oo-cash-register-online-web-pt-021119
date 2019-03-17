@@ -10,4 +10,8 @@ class CashRegister
     @discount.to_i
   end
 
+  def total
+    @total
+  end
+
 end
