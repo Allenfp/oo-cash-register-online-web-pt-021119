@@ -22,8 +22,9 @@ class CashRegister
     (1..qty).each {
       @items.push(item)
     }
-    @total += price*qty
     @last_transaction = price*qty
+    @total += price*qty
+
   end
 
   def apply_discount()
