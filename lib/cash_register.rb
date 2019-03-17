@@ -7,7 +7,7 @@ class CashRegister
     @total = 0.0
     @discount = discount.to_f
     @items = []
-    @last_transaction
+    @last_transaction = 0
   end
 
   def void_last_transaction
