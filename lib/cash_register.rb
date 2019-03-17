@@ -14,7 +14,10 @@ class CashRegister
   end
 
   def add_item(item, price, qty=1)
-    @items.push(item)
+    (1..qty).each {
+      @items.push(item)
+    }
+
     @total += price*qty
   end
 
@@ -28,7 +31,7 @@ class CashRegister
   end
 
   def items
-    @items    
+    @items
   end
 
 end
