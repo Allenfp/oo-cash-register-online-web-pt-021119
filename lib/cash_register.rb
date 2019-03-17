@@ -10,7 +10,7 @@ class CashRegister
     @discount.to_i
   end
 
-  def selftotal
+  def self.total
     @total
   end
 
